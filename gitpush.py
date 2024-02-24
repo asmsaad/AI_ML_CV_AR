@@ -5,19 +5,19 @@
  
 import os
 
-def header():
+def header(header):
     print('┌───────────────────────────────────────────────────┐') 
-    print('│                                                   │') 
+    print('│' + ' '*30 + '│') 
     print('└───────────────────────────────────────────────────┘') 
 
 
 
-header()
+header('')
 os.system("git status")
-header()
+header('')
 os.system("git add . ")
-header()
+header('')
 os.system("git status")
-header()
+header('')
 os.system('git commit -m "first commit22" ')
 os.system("git push -u origin main")
