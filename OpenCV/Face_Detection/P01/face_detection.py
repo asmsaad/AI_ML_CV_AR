@@ -8,7 +8,9 @@ import numpy as np
 # ('./../../../opencv-master/data/haarcascades/haarcascade_frontalface_default.xml')
 # face_cascade= cv.CascadeClassifier('haarcascade_frontalface_default.xml') # From https://github.com/opencv/opencv/tree/master/data
 # face_cascade= cv.CascadeClassifier('./../../../opencv-master/data/haarcascades/haarcascade_frontalface_default.xml') # From https://github.com/opencv/opencv/tree/master/data
-face_cascade= cv.CascadeClassifier('./../../../opencv-master/data/haarcascades/haarcascade_profileface.xml') # From https://github.com/opencv/opencv/tree/master/data
+# face_cascade= cv.CascadeClassifier('./../../../opencv-master/data/haarcascades/haarcascade_profileface.xml') # From https://github.com/opencv/opencv/tree/master/data
+# face_cascade= cv.CascadeClassifier('./../../../opencv-master/data/haarcascades_cuda/haarcascade_profileface.xml') # From https://github.com/opencv/opencv/tree/master/data
+face_cascade= cv.CascadeClassifier('./../../../opencv-master/data/lbpcascades/lbpcascade_frontalface_improved.xml') # From https://github.com/opencv/opencv/tree/master/data
 def check01() :
     # cap = cv.VideoCapture("video01.mp4")
     cap = cv.VideoCapture("trackingVideo.mp4")
