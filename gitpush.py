@@ -4,6 +4,16 @@
  
  
 import os
+from datetime import datetime
+
+# Get current date and time
+current_datetime = datetime.now()
+
+# Format date and time
+formatted_datetime = current_datetime.strftime("%d%b%Y_%I:%M%p")
+
+print(formatted_datetime)
+
 
 def header(header):
     print('┌' + '─'*51 + '┐') 
@@ -12,6 +22,7 @@ def header(header):
 
 
 
+header(formatted_datetime)
 header('Checking Changes')
 os.system("git status")
 header('Adding Changes')
