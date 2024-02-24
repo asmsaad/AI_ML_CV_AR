@@ -14,9 +14,9 @@ def header(header):
 
 header('Checking Changes')
 os.system("git status")
-header('')
+header('Adding Changes')
 os.system("git add . ")
-header('')
+header('Added Status')
 os.system("git status")
 header('UPLOADING...')
 os.system('git commit -m "first commit22" ')
