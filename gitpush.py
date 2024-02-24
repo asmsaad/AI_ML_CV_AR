@@ -16,6 +16,14 @@ def header(header):
     print('┌' + '─'*51 + '┐') 
     print('│' + header.center(51,' ') + '│') 
     print('└' + '─'*51 + '┘') 
+    
+def footer(footer):
+    print()
+    print('┌' + '─'*51 + '┐') 
+    print('│' + footer.center(51-4,'=') + '│') 
+    print('└' + '─'*51 + '┘') 
+    print()
+    print()
 
 
 
@@ -29,8 +37,4 @@ os.system("git status")
 header('Uploading...')
 os.system('git commit -m "first commit22" ')
 os.system("git push -u origin main")
-print()
-print(' ' +  ('  '+formatted_datetime+'  ').center(51,'=') + ' ') 
-print()
-print()
-print()
+footer('  '+formatted_datetime+'  ')
