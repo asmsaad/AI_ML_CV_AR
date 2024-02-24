@@ -12,7 +12,7 @@ def header(header):
 
 
 
-header('')
+header('Checking Changes')
 os.system("git status")
 header('')
 os.system("git add . ")
