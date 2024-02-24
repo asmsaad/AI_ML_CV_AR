@@ -7,7 +7,7 @@ import os
 
 def header(header):
     print('┌' + '─'*51 + '┐') 
-    print('│' + ' '*51 + '│') 
+    print('│' + header.center(51,' ') + '│') 
     print('└' + '─'*51 + '┘') 
 
 
