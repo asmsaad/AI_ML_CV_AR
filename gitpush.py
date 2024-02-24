@@ -20,7 +20,7 @@ def header(header):
 def footer(footer):
     print()
     print('┌' + '─'*51 + '┐') 
-    print('│' + footer.center(51-4,'=') + '│') 
+    print('│' + footer.center(51,'=') + '│') 
     print('└' + '─'*51 + '┘') 
     print()
     print()
